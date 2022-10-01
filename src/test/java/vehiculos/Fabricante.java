@@ -25,7 +25,7 @@ public class Fabricante {
 	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
-	private int mayor(int[] valores) {
+	private static int mayor(int[] valores) {
 		int may = valores[0];
 		int pos = 0;
 		for(int i=1; i<valores.length; i++) {
@@ -36,7 +36,7 @@ public class Fabricante {
 		}
 		return pos;
 	}
-	public Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		ArrayList<Vehiculo> vehiculos = Vehiculo.vehiculos();
 		int[] valores = new int[listado.size()];
 		for(int i=0; i<listado.size(); i++) {
