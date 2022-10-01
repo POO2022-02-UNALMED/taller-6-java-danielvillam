@@ -11,7 +11,7 @@ public class Vehiculo {
 	private Fabricante fabricante;
 	private static int CantidadVehiculos;
 	
-	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, float precio, float peso, String traccion, Fabricante fabricante) {
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
 		setCantidadVehiculos(getCantidadVehiculos() + 1);
 		this.setPlaca(placa);
 		this.setPuertas(puertas);
