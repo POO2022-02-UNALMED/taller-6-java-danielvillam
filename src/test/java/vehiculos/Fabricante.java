@@ -43,8 +43,7 @@ public class Fabricante {
 			for(int j=0; j<vehiculos.size();j++) {
 				if(vehiculos.get(j).isFabricante(listado.get(i))) {
 					valores[i]+=1;
-				}
-					
+				}	
 			}
 		}
 		return listado.get(mayor(valores));

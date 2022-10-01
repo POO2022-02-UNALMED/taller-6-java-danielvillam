@@ -113,6 +113,13 @@ public class Vehiculo {
 		}else {
 			return false;
 		}
-
+	}
+	
+	public boolean isPais(Pais pais) {
+		if(this.fabricante.getPais().equals(pais)) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 }
